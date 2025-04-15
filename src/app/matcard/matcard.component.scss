@@ -1,0 +1,30 @@
+.song-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .song-card {
+    width: 100%;
+    max-width: 300px;
+    flex: 1 1 280px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    border-radius: 16px;
+  }
+  
+  .song-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+  }
+  mat-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  mat-card-subtitle {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  

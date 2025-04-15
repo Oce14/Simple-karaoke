@@ -1,0 +1,40 @@
+<div class="paroles-header">
+    <button class="home-button" mat-stroked-button color="accent" [routerLink]="['/admin']">
+        <mat-icon>arrow_back</mat-icon>
+        Accueil
+    </button>
+
+    <div *ngIf="song$ | async as song" class="floating-action-buttons">
+        <button *ngIf="!karaokeService.getIsSent()" mat-flat-button color="primary"
+            (click)="karaokeService.diffuser(song)">
+            <mat-icon>play_circle</mat-icon>
+            Diffuser
+        </button>
+
+        <button *ngIf="karaokeService.getIsSent()" mat-stroked-button color="warn"
+            (click)="karaokeService.arreterDiffusion()">
+            <mat-icon>stop_circle</mat-icon>
+            Arrêter
+        </button>
+    </div>
+</div>
+
+<div *ngIf="song$ | async as song" class="paroles-container">
+    <mat-card class="paroles-card" appearance="outlined">
+        <mat-card-header>
+            <mat-card-title class="title">{{ song.title }}</mat-card-title>
+            <mat-card-subtitle class="artist">{{ song.artist }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+            <div class="lyrics">
+                <div *ngFor="let part of song.lyrics" class="lyrics-part">
+                    <h4 class="section">{{ part.type | titlecase }}</h4>
+                    <p *ngFor="let line of part.lines" class="line">{{ line }}</p>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+
+</div>

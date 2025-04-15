@@ -1,0 +1,252 @@
+.paroles-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .lyrics {
+    margin-top: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 12px;
+  }
+  
+  .lyrics-part {
+    margin-bottom: 24px;
+  }
+  
+  .section {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #3f51b5;
+  }
+  
+  .line {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .pdf-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .page-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #3f51b5;
+  }
+  
+  .search-bar {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .song-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .song-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .song-card {
+    width: 100%;
+    max-width: 300px;
+    flex: 1 1 280px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    border-radius: 16px;
+  }
+  
+  .song-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+  }
+  mat-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  mat-card-subtitle {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .paroles-header {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .paroles-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  .paroles-card {
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #3f51b5;
+  }
+  
+  .artist {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .lyrics {
+    margin-top: 1.5rem;
+  }
+  
+  .lyrics-part {
+    margin-bottom: 2rem;
+  }
+  
+  .section {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #5c6bc0;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid #3f51b5;
+    padding-left: 0.5rem;
+  }
+  
+  .line {
+    margin: 0.5rem 0;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    color: #222;
+  }
+  
+  
+  /* Boutons d'action */
+  .action-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .action-buttons button {
+    border-radius: 999px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    box-shadow: 0 4px 14px rgba(63, 81, 181, 0.3); /* Material primary */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-width: 220px;
+  }
+  
+  .action-buttons button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(63, 81, 181, 0.4);
+  }
+  
+  
+  /* Texte des paroles */
+  .lyrics {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.75;
+  }
+  
+  .line {
+    margin: 0.3rem 0;
+    white-space: pre-line;
+  }
+  
+  /* Pour un effet rétro console / machine à écrire (optionnel) */
+  .lyrics.console-style {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    color: #111;
+  }
+  
+  .paroles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .floating-action-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .floating-action-buttons button {
+    border-radius: 999px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+  }
+  
+  .floating-action-buttons button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .home-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    text-transform: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    box-shadow: 0 2px 10px rgba(63, 81, 181, 0.15);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .home-button:hover {
+    background-color: rgba(63, 81, 181, 0.04);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(63, 81, 181, 0.3);
+  }
+  
+  
+  
+  
+  

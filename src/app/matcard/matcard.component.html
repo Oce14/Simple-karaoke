@@ -1,0 +1,14 @@
+<div *ngIf="songs$ | async as songs" class="song-list">
+    <mat-card *ngFor="let song of filteredSongs(songs)" class="song-card" appearance="outlined">
+        <mat-card-header>
+            <mat-card-title>{{ song.title }}</mat-card-title>
+            <mat-card-subtitle>{{ song.artist }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-actions align="end">
+            <button mat-flat-button color="primary" [routerLink]="['/paroles', song.fileName]">
+                🎵 Voir les paroles
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>

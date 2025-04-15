@@ -1,0 +1,52 @@
+<div *ngIf="!(isFree$ | async)">
+    <div *ngIf="songs$ | async as songs">
+        <div *ngFor="let song of songs" class="paroles-container">
+            <mat-card appearance="outlined">
+                <mat-card-header>
+                    <mat-card-title class="title">{{ song.title }}</mat-card-title>
+                    <mat-card-subtitle class="artist">{{ song.artist }}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <div class="lyrics">
+                        <div *ngFor="let part of song.lyrics" class="lyrics-part">
+                            <h4 class="section">{{ part.type.charAt(0).toUpperCase() + part.type.slice(1).toLowerCase()
+                                }}</h4>
+                            <p *ngFor="let line of part.lines" class="line">{{ line }}</p>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="isFree$ | async">
+    <section class="container">
+        <h1 class="page-title">🎶 Paroles disponibles</h1>
+
+        <mat-form-field appearance="outline" class="search-bar">
+            <mat-label>Rechercher un titre...</mat-label>
+            <input matInput placeholder="Tape un titre, un artiste..." [(ngModel)]="searchTerm" />
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+
+        <div class="song-grid">
+            <div *ngIf="songs$ | async as songs" class="song-list">
+                <mat-card *ngFor="let song of filteredSongs(songs)" class="song-card" appearance="outlined">
+                    <mat-card-header>
+                        <mat-card-title>{{ song.title }}</mat-card-title>
+                        <mat-card-subtitle>{{ song.artist }}</mat-card-subtitle>
+                    </mat-card-header>
+
+                    <mat-card-actions align="end">
+                        <!--<button mat-button (click)="viewLyrics(song)">Voir les paroles</button>-->
+                        <button mat-flat-button color="primary" [routerLink]="['/paroles-details', song.fileName]">🎵
+                            Voir les paroles</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </section>
+
+
+</div>

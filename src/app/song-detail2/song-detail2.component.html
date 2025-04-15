@@ -1,0 +1,46 @@
+<div *ngIf="!(isFree$ | async)">
+    <div *ngIf="songs$ | async as songs">
+        <div *ngFor="let song of songs" class="paroles-container">
+            <mat-card class="paroles-card" appearance="outlined">
+                <mat-card-header>
+                    <mat-card-title class="title">{{ song.title }}</mat-card-title>
+                    <mat-card-subtitle class="artist">{{ song.artist }}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <div class="lyrics">
+                        <div *ngFor="let part of song.lyrics" class="lyrics-part">
+                            <h4 class="section">{{ part.type.charAt(0).toUpperCase() + part.type.slice(1).toLowerCase()
+                                }}</h4>
+                            <p *ngFor="let line of part.lines" class="line">{{ line }}</p>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
+<div *ngIf="isFree$ | async">
+    <div class="paroles-header">
+        <button class="home-button" mat-stroked-button color="accent" [routerLink]="['/invite']">
+            <mat-icon>arrow_back</mat-icon>
+            Accueil
+        </button>
+    </div>
+    <div *ngIf="song$ | async as song" class="paroles-container">
+        <mat-card class="paroles-card" appearance="outlined">
+            <mat-card-header>
+                <mat-card-title class="title">{{ song.title }}</mat-card-title>
+                <mat-card-subtitle class="artist">{{ song.artist }}</mat-card-subtitle>
+            </mat-card-header>
+
+            <mat-card-content>
+                <div class="lyrics">
+                    <div *ngFor="let part of song.lyrics" class="lyrics-part">
+                        <h4 class="section">{{ part.type | titlecase }}</h4>
+                        <p *ngFor="let line of part.lines" class="line">{{ line }}</p>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

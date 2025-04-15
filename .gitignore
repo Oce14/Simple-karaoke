@@ -40,3 +40,17 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+.vscode/
+
+# Firebase
+firebase-debug.log
+firebase.json
+.firebaserc
+firebase-debug.log
+.firebase/
+
+cors.json
+storage.rules
+storage.json
+

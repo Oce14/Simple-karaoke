@@ -1,0 +1,15 @@
+<section class="container">
+    <h1 class="page-title">🎶 Paroles disponibles</h1>
+    <button [routerLink]="['/games']" mat-flat-button color="primary" class="floating-action-buttons"> 🎵 N'oubliez pas
+        les paroles </button>
+
+    <mat-form-field appearance="outline" class="search-bar">
+        <mat-label>Rechercher un titre...</mat-label>
+        <input matInput placeholder="Tape un titre, un artiste..." [(ngModel)]="searchTerm" />
+        <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+
+    <div class="song-grid">
+        <app-matcard [searchTerm]="searchTerm"></app-matcard>
+    </div>
+</section>
