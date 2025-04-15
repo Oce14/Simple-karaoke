@@ -54,3 +54,7 @@ cors.json
 storage.rules
 storage.json
 
+# Local env files
+/src/environments/environment.ts
+/src/environments/environment.prod.ts
+
