@@ -3,6 +3,25 @@
 ![alt text](image.png)
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+## Demo
+
+You can connect as a admin to [https://paroleannivisa.web.app/admin](https://paroleannivisa.web.app/admin).
+
+![alt text](image-1.png)
+
+Then you can choose a music to diffuse to the users.
+
+![alt text](image-2.png)
+
+Click on the music you want to diffuse and then click on the button "Diffuser" to diffuse the music.
+
+![alt text](image-3.png)
+
+Then you can see the music is diffused to the users.
+The users can see the music on their screen in real time at [https://paroleannivisa.web.app](https://paroleannivisa.web.app).
+
+![alt text](image-4.png)
+
 
 ## Development server
 
@@ -93,23 +112,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Website
 The website is hosted on Firebase and can be accessed at [https://paroleannivisa.web.app](https://paroleannivisa.web.app).
-
-## Demo
-
-You can connect as a admin to [https://paroleannivisa.web.app/admin](https://paroleannivisa.web.app/admin).
-
-![alt text](image-1.png)
-
-Then you can choose a music to diffuse to the users.
-
-![alt text](image-2.png)
-
-Click on the music you want to diffuse and then click on the button "Diffuser" to diffuse the music.
-
-![alt text](image-3.png)
-
-Then you can see the music is diffused to the users.
-The users can see the music on their screen in real time at [https://paroleannivisa.web.app](https://paroleannivisa.web.app).
-
-![alt text](image-4.png)
 
