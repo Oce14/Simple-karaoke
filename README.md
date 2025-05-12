@@ -1,4 +1,4 @@
-# ParoleAnnivIsa
+# Simple karaoke
 
 ![alt text](image.png)
 
