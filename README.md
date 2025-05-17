@@ -5,7 +5,7 @@
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
 ## Demo
 
-You can connect as a admin to [https://paroleannivisa.web.app/admin](https://paroleannivisa.web.app/admin).
+You can connect as a admin to [https://isa-anniv-app.web.app/admin](https://isa-anniv-app.web.app/admin).
 
 ![alt text](image-1.png)
 
@@ -18,7 +18,7 @@ Click on the music you want to diffuse and then click on the button "Diffuser" t
 ![alt text](image-3.png)
 
 Then you can see the music is diffused to the users.
-The users can see the music on their screen in real time at [https://paroleannivisa.web.app](https://paroleannivisa.web.app).
+The users can see the music on their screen in real time at [https://isa-anniv-app.web.app](https://isa-anniv-app.web.app).
 
 ![alt text](image-4.png)
 
@@ -111,5 +111,5 @@ To deploy the application on Firebase, follow these steps:
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Website
-The website is hosted on Firebase and can be accessed at [https://paroleannivisa.web.app](https://paroleannivisa.web.app).
+The website is hosted on Firebase and can be accessed at [https://isa-anniv-app.web.app/](https://isa-anniv-app.web.app/).
 
