@@ -6,6 +6,9 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 ## Demo
 
 You can connect as a admin to [https://isa-anniv-app.web.app/admin](https://isa-anniv-app.web.app/admin).
+OR
+You can scan the QR code: 
+![WhatsApp Image 2025-04-10 à 21 01 52_c62282b3](https://github.com/user-attachments/assets/c5ea0269-ad82-4882-9f39-edc5060feefe)
 
 ![alt text](image-1.png)
 
